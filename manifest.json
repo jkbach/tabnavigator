@@ -1,0 +1,24 @@
+{
+  "name": "Tab navigator",
+  "version": "0.1",
+  "description": "Allows moving left/right through open tabs.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "tab-left": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+H"
+      },
+      "description": "Switch to the tab to the left."
+    },
+    "tab-right": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      },
+      "description": "Switch to the tab to the right."
+    }
+  },
+  "manifest_version": 3
+}
